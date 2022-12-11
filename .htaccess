@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^socios.gama.academy$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.socios.gama.academy$
+  RewriteRule (.*)$ https://mariomerinomartinez.uc3m.es/$1 [R=301,L]
+</IfModule>
